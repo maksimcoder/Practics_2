@@ -1,5 +1,5 @@
 import modal from './modules/modal';
-import slider from './modules/slider';
+import sliders from './modules/slider';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // const modalTimerId = setTimeout(() => showModalByTime('.popup-consultation', modalTimerId), 4000);
 
     modal();
-    slider('.main-slider-item', '.main-slider');
+    sliders('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
+    sliders('.main-slider-item', 'vertical');
 
 });
